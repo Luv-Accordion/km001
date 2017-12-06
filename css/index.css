@@ -1,0 +1,19 @@
+body {
+	background-color: #111;
+}
+
+h1 {
+	padding: 0.1em;
+	color: #FFC107;
+	font-family:arial, sans-serif;
+	font-size: 3.4em;
+}
+
+div {
+	padding: 0.1em;
+	color: #FFC107;
+	font-family:arial, sans-serif;
+	font-size: 1.4em;
+}
+
+
