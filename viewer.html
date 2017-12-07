@@ -43,23 +43,19 @@
 </head>
 
 <body>
-    <h1>Luv-Accordion Web</h1>
+    <h1>Viewer</h1>
     <br>
-    <div><a href=https://twitter.com/kemapoo>Twitter</a></div>
-    <br>
-    <div><a href=https://www.youtube.com/channel/UCdPFXZZgVZLrsT15tfdZXtw>Youtube</a></div>
-    <br>
-    <div><a href="viewer.html">Viewer</a></div>
-    <br>
-    <div id="dialog" title="Profile">
-        <p>I am a Japanese engineer.
-            I like to play the accordion and programming.</p>
-        </div>
-        <div id="opener">Profile</div>
+    <div class="dialog" title="Usage">
+        <ol>
+        <li>ああする</li>
+        <li>こうする</li>
+        </ol>
+    </div>
+        <button id="usage">Usage</button>
 
         <script>
         $( function() {
-            $( "#dialog" ).dialog({
+            $( ".dialog" ).dialog({
                 autoOpen: false,
                 modal: true,
                 show: {
@@ -72,25 +68,16 @@
                 }
             });
 
-            $( "#opener" ).on( "click", function() {
-                $( "#dialog" ).dialog( "open" );
+            $( "#usage" ).on( "click", function() {
+                $( ".dialog" ).dialog( "open" );
             });
         } );
         </script>
 
-        <!-- Javascript -->
+        <!-- Main -->
         <script src="./js/viewport.js"></script>
-        <script>
-        $(function(){
-            //-- Setting viewport
-            settingViewPort();
+        <script src="./js/main.js"></script>
 
-            //-- Show
-            $("body").css({ visibility: "visible" });
-        });
-        </script>
-
-        </script>>
 
     </body>
     </html>
